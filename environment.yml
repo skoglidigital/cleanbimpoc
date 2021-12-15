@@ -1,7 +1,6 @@
 name: cleanbimpoc
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - abseil-cpp=20210324.2
   - altair=4.1.0
