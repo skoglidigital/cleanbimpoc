@@ -6,7 +6,8 @@ Proof of concept(PoC) on a cost for cleaning calculator based on BIM [Norwegian]
 
 Videoen under viser en skjermopptak av applikasjonen. Den vil også bli publisert slik at den kan prøves ut med egne IFC modeller.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MZTUgKKT0ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![IMAGE_ALT](https://i9.ytimg.com/vi_webp/MZTUgKKT0ac/mqdefault.webp?v=61ba30ab&sqp=CKTh6I0G&rs=AOn4CLCasCZLavD76nwran8nZ_WcIml84Q)](https://www.youtube.com/embed/MZTUgKKT0ac)
 
 ## This repo also containsain the code
 
