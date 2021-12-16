@@ -1,9 +1,11 @@
-name: ifcopenshell
+name: cleanbimpoc
 channels:
+  - conda-forge
   - defaults
 dependencies:
-  - python=3.8
+  - python=3.7
   - ifcopenshell
-  - jupyterlab
+  - numpy
   - pandas
-prefix: /Users/Sigve/opt/anaconda3/envs/ifcopenshell
+  - streamlit
+prefix: /Users/Sigve/opt/anaconda3/envs/cleanbimpoc
