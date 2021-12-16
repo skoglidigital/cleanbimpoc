@@ -1,10 +1,11 @@
 name: cleanbimpoc
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - abseil-cpp=20210324.2
   - altair=4.1.0
-  - appnope=0.1.2
+  - appnope
   - argcomplete=1.12.3
   - argon2-cffi=20.1.0
   - arrow-cpp=5.0.0
@@ -82,7 +83,7 @@ dependencies:
   - libev=4.33
   - libevent=2.1.8
   - libffi=3.3
-  - libgfortran=5.0.0
+  - libgfortran
   - libgfortran5=9.3.0
   - libiconv=1.16
   - liblapack=3.9.0
@@ -98,7 +99,7 @@ dependencies:
   - libwebp=1.2.0
   - libwebp-base=1.2.0
   - libxml2=2.9.12
-  - llvm-openmp=12.0.0
+  - llvm-openmp
   - lz4-c=1.9.3
   - markupsafe=2.0.1
   - matplotlib-inline=0.1.2
