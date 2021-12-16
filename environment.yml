@@ -5,7 +5,6 @@ channels:
 dependencies:
   - abseil-cpp=20210324.2
   - altair=4.1.0
-  - appnope
   - argcomplete=1.12.3
   - argon2-cffi=20.1.0
   - arrow-cpp=5.0.0
