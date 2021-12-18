@@ -3,9 +3,34 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7
-  - ifcopenshell
-    -pip:
-      - pandas
-      - streamlit
+  - boost-cpp=1.74.0
+  - bzip2=1.0.8
+  - ca-certificates=2021.10.8
+  - certifi=2021.10.8
+  - fontconfig=2.13.1
+  - freetype=2.10.4
+  - icu=69.1
+  - ifcopenshell=v0.6.0
+  - libcxx=12.0.1
+  - libffi=3.4.2
+  - libiconv=1.16
+  - libpng=1.6.37
+  - libxml2=2.9.12
+  - libzlib=1.2.11
+  - lz4-c=1.9.3
+  - ncurses=6.2
+  - occt=7.4.0
+  - openssl=3.0.0
+  - pip=21.3.1
+  - python=3.7.12
+  - python_abi=3.7
+  - readline=8.1
+  - setuptools=59.6.0
+  - sqlite=3.37.0
+  - tbb=2020.2
+  - tk=8.6.11
+  - wheel=0.37.0
+  - xz=5.2.5
+  - zlib=1.2.11
+  - zstd=1.5.0
 prefix: /Users/Sigve/opt/anaconda3/envs/cleanbimpoc
