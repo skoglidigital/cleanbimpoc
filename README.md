@@ -2,6 +2,8 @@
 
 Proof of concept(PoC) on a cost for cleaning calculator based on BIM [Norwegian]
 
+[Try out the app in your browser going here](https://share.streamlit.io/mok-see/cleanbimpoc/main/hello_renholdskost.py)
+
 ## Liten PoC for å vise nytten av gode BIM krav for bruk i driftsfasen
 
 Videoen under viser en skjermopptak av applikasjonen. Den vil også bli publisert slik at den kan prøves ut med egne IFC modeller.
