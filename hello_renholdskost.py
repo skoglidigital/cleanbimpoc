@@ -31,6 +31,8 @@ def get_qtos(elem):
     psets = element.get_psets(elem)
     if "BaseQuantities" in psets:
         return psets["BaseQuantities"]
+    elif "Qto_SpaceBaseQuantities" in psets:
+        return psets["Qto_SpaceBaseQuantities"]
     else:
         return {}
 # Fetched from ifcopenshell.util.unit --> will be part of newer releases
