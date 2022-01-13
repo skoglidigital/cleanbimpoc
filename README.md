@@ -6,7 +6,7 @@ Proof of concept(PoC) on a cost for cleaning calculator based on BIM [in Norwegi
 
 ## Liten prototype for å vise nytten av gode BIM krav for bruk i driftsfasen
 
-Videoen under viser en skjermopptak av applikasjonen. Den vil også bli publisert slik at den kan prøves ut med egne IFC modeller.
+Videoen under viser en skjermopptak av applikasjonen. Den er også bli publisert slik at den kan prøves ut med egne IFC modeller (se lenken over).
 
 [![Screencast of the app on localhost](img/screencast.png)](https://www.youtube.com/watch?v=MZTUgKKT0ac&feature=youtu.be)
 
