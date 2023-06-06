@@ -28,13 +28,18 @@ def load_ifc(ifc_file):
 	ifc = ifcopenshell.file.from_string(ifc_file)
 	return ifc
 def get_qtos(elem):
-    psets = element.get_psets(elem)
-    if "BaseQuantities" in psets:
-        return psets["BaseQuantities"]
-    elif "Qto_SpaceBaseQuantities" in psets:
-        return psets["Qto_SpaceBaseQuantities"]
-    else:
-        return {}
+	try:
+		psets = element.get_psets(elem)
+	except Exception as e:
+		print("------------------------Exception----------------------")
+		print(e)
+		psets = None
+	if "BaseQuantities" in psets:
+		return psets["BaseQuantities"]
+	elif "Qto_SpaceBaseQuantities" in psets:
+		return psets["Qto_SpaceBaseQuantities"]
+	else:
+		return {}
 # Fetched from ifcopenshell.util.unit --> will be part of newer releases
 def get_unit_assignment(ifc_file):
     unit_assignments = ifc_file.by_type("IfcUnitAssignment")
@@ -43,21 +48,23 @@ def get_unit_assignment(ifc_file):
 
 # function to get net areas for spaces
 def get_net_areas(elem):
-    qtos=get_qtos(elem)
-    net_areas = {}
-    if "NetFloorArea" in qtos:
-        net_areas["Netto Gulvareal m2"] = round(qtos["NetFloorArea"],2)
-    else:
-        net_areas["Netto Gulvareal m2"] = None
-    if "NetCeilingArea" in qtos:
-        net_areas["Netto Takareal m2"] = round(qtos["NetCeilingArea"],2)
-    else:
-        net_areas["Netto Takareal m2"] = None
-    if "NetWallArea" in qtos:
-        net_areas["Netto Veggareal m2"] = round(qtos["NetWallArea"],2)
-    else:
-        net_areas["Netto Veggareal m2"] = None
-    return net_areas
+	qtos=get_qtos(elem)
+
+	net_areas = {}
+
+	if "NetFloorArea" in qtos:
+		net_areas["Netto Gulvareal m2"] = round(qtos["NetFloorArea"],2)
+	else:
+		net_areas["Netto Gulvareal m2"] = None
+	if "NetCeilingArea" in qtos:
+		net_areas["Netto Takareal m2"] = round(qtos["NetCeilingArea"],2)
+	else:
+		net_areas["Netto Takareal m2"] = None
+	if "NetWallArea" in qtos:
+		net_areas["Netto Veggareal m2"] = round(qtos["NetWallArea"],2)
+	else:
+		net_areas["Netto Veggareal m2"] = None
+	return net_areas
 
 def get_room_info(space):
     room = space.get_info()
@@ -109,9 +116,11 @@ def get_cost_df(df,cost_m2):
 
 # Used to fetch gross area on buildng
 def get_bruttoareal(elem):
-    qtos=get_qtos(elem)
-    if "GrossFloorArea" in qtos:
-        return round(qtos["GrossFloorArea"],2)
+
+	qtos=get_qtos(elem)
+
+	if "GrossFloorArea" in qtos:
+		return round(qtos["GrossFloorArea"],2)
 
 def get_table_download_link(df):
     """Generates a link allowing the data in a given panda dataframe to be downloaded

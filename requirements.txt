@@ -1,0 +1,6 @@
+streamlit
+ifcopenshell
+xmlschema
+pandas
+xlsxwriter
+pystache
